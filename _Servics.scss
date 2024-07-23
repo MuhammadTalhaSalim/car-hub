@@ -1,0 +1,121 @@
+.section-2 {
+  // width: 1440px;
+  // height: 847px;
+  width:100%;
+  height: 100vh;
+  background-color: #3f3f3f;
+  overflow-y: hidden;
+  color: white;
+  position: relative;
+  bottom:140px;
+  .Services-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    align-items: center;
+    padding:50px 60px;
+    gap:20px;
+    .heading {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+      h2 {
+        font-size: 38px;
+        font-weight: bold;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      .icon {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:33%;
+        img {
+          width: 42px;
+          height: 40px;
+          border: 2px solid white;
+          padding: 10px;
+          border-radius: 35px;
+        }
+        h3 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 12px;
+          padding:0px 10px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .section-2{
+    height: 1400px;
+    background-color: #0f0f0f;
+    .Services-container{
+      width: 100%;
+      padding: 90px 0px;
+      .heading{
+        text-align: center!important;
+        padding:0px 35px;
+        h2{
+          font-size: 28px;
+        }
+      }
+      .services{
+        // width:50%;
+        // gap: 50px;
+        // margin-top: 50px;
+        width: 75%;
+        gap: 35px;
+        margin-top: 22px;
+        .icon{
+          width:240px;
+          h3{
+            font-size: 18px;
+          }
+          p{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    
+  }
+}
+@media (min-width:600px) and (max-width:900px){
+  .Services-container{
+    padding:9px 18px !important;
+    width: 85% !important;
+    .heading{
+      h2{
+        font-size: 30px !important;
+      }
+      p{
+        font-size: 13px !important;
+      }
+    }
+  }
+}
+@media  (min-width:1000px) and (max-width:1199px){
+  .section-2{
+    bottom: 163px;
+  }
+}
+@media (min-width:1435px){
+  .section-2{
+    bottom: 188px;
+    height: 80vh;
+  }
+}
